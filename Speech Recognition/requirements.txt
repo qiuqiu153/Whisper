@@ -1,0 +1,4 @@
+pip uninstall -q -y optimum-intel optimum
+pip install -q transformers onnx "git+https://github.com/eaidova/optimum-intel.git@ea/whisper" --extra-index-url https://download.pytorch.org/whl/cpu
+pip install -q "openvino>=2023.2.0" datasets  "gradio>=4.0" "librosa" "soundfile"
+pip install -q "nncf>=2.6.0" "jiwer"
